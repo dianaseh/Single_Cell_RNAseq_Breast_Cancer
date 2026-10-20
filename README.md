@@ -48,36 +48,35 @@ The saved notebook outputs report the following exploratory classification resul
 These metrics are based on the notebook's existing saved outputs. The current presentation-edited notebook has not yet been rerun end-to-end. The dataset contains only six biological samples, and DEG-based feature selection occurs before cross-validation in the current workflow; therefore, these results should be interpreted as exploratory rather than as an independent estimate of clinical diagnostic performance.
 
 ## Selected Figures
-
 ### Quality control
 
-The QC distributions illustrate the metrics assessed before and after cell filtering.
+QC distributions were examined across samples before and after filtering to assess library size, detected genes, and mitochondrial-read percentage.
 
 ![QC metrics before filtering](figures/qc_before_filtering.png)
 
 ![QC metrics after filtering](figures/qc_after_filtering.png)
 
-### Highly variable gene selection
 
-The selected features provide the expression matrix used for downstream dimensionality reduction and clustering.
+### Clustering and cell-type annotation
 
-![Highly variable genes](figures/highly_variable_genes.png)
+The BBKNN neighborhood graph was used for final Leiden clustering. Cluster annotations were then visualized alongside sample identity and condition to support interpretation of the cellular composition.
 
-### Final clustering and cell-type annotation
+<p align="center">
+  <img src="figures/final_leiden_clusters.png" alt="UMAP embedding showing the final Leiden clusters" width="72%">
+</p>
 
-The BBKNN-based UMAP shows the final Leiden clusters. The annotated embedding compares cell-type labels with condition and sample identity.
+<p align="center">
+  <img src="figures/cell_type_annotation.png" alt="UMAP embeddings colored by cell-type annotation, condition, and sample identity" width="100%">
+</p>
 
-![Final Leiden clusters after BBKNN](figures/final_leiden_clusters.png)
+### Exploratory classifier evaluation
 
-![Cell-type annotations, condition, and sample identity](figures/cell_type_annotation.png)
+The sample-level expression matrix was evaluated using leave-one-sample-out cross-validation. The confusion matrices below summarize held-out predictions for each classifier.
 
-### Classifier evaluation
-
-The confusion matrices summarize sample-level predictions from leave-one-sample-out cross-validation for both classifiers.
-
-![Logistic regression confusion matrix](figures/confusion_matrix_logistic_regression.png)
-
-![Random Forest confusion matrix](figures/confusion_matrix_random_forest.png)
+<p align="center">
+  <img src="figures/confusion_matrix_logistic_regression.png" alt="Logistic regression confusion matrix" width="49%">
+  <img src="figures/confusion_matrix_random_forest.png" alt="Random Forest confusion matrix" width="49%">
+</p>
 
 ## Methods and Tools
 
