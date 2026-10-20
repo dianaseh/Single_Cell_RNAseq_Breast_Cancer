@@ -1,0 +1,14 @@
+# Raw source data
+data/
+
+# Large intermediate AnnData objects
+*.h5ad
+
+# Notebook checkpoints and Python cache
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
