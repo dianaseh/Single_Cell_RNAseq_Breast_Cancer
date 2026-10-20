@@ -104,5 +104,3 @@ Raw count matrices, barcode files, and the shared feature annotation are not inc
 ## Reproducibility
 
 The notebook is configured for Google Colab and Google Drive. Exploring the existing notebook outputs does not require the original data files, but reproducing the full pipeline requires obtaining the source data, installing the required dependencies, and regenerating the intermediate files.
-
-The notebook's presentation edits have not yet been validated through a fresh end-to-end execution.
