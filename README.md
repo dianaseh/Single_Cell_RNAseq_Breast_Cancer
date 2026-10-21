@@ -45,7 +45,7 @@ The saved notebook outputs report the following exploratory classification resul
 | F1 score | 0.500 | 0.800 |
 | ROC-AUC | 1.000 | 1.000 |
 
-These metrics are based on the notebook's existing saved outputs. The current presentation-edited notebook has not yet been rerun end-to-end. The dataset contains only six biological samples, and DEG-based feature selection occurs before cross-validation in the current workflow; therefore, these results should be interpreted as exploratory rather than as an independent estimate of clinical diagnostic performance.
+The dataset contains only six biological samples, and DEG-based feature selection occurs before cross-validation in the current workflow; therefore, these results should be interpreted as exploratory rather than as an independent estimate of clinical diagnostic performance.
 
 ## Selected Figures
 ### Quality control
