@@ -6,6 +6,11 @@ This project analyzes single-cell RNA-seq data from six biological samples—thr
 
 The workflow integrates quality control, normalization, dimensionality reduction, BBKNN-based batch-aware clustering, marker-based cell-type annotation, differential expression, and exploratory machine-learning evaluation. The project connects cellular characterization with interpretable gene-expression features in a clinically oriented research context.
 
+
+[Explore the notebook](notebooks/single_cell_rnaseq_breast_cancer.ipynb)
+
+[Read the technical report](reports/Single_Cell_RNAseq_Breast_Cancer_Report.pdf)
+
 ## Research Objectives
 
 - Characterize cellular heterogeneity in healthy mammary tissue and ER+ breast tumors.
