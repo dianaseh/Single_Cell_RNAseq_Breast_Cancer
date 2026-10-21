@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project analyzes single-cell RNA-seq data from six biological samples—three healthy mammary tissue samples and three estrogen receptor-positive (ER+) breast tumors—to characterize cellular heterogeneity and explore sample-level disease classification.
+This project analyzes single-cell RNA-seq data from six biological samples-three healthy mammary tissue samples and three estrogen receptor-positive (ER+) breast tumors-to characterize cellular heterogeneity and explore sample-level disease classification.
 
 The workflow integrates quality control, normalization, dimensionality reduction, BBKNN-based batch-aware clustering, marker-based cell-type annotation, differential expression, and exploratory machine-learning evaluation. The project connects cellular characterization with interpretable gene-expression features in a clinically oriented research context.
 
@@ -101,9 +101,10 @@ Raw count matrices, barcode files, and the shared feature annotation are not inc
 
 ## Repository Contents
 
-- `single_cell_rnaseq_breast_cancer.ipynb` — end-to-end analysis notebook.
-- `figures/` — selected figures exported from the notebook's saved outputs.
-- `.gitignore` — excludes raw data, large intermediate AnnData objects, and temporary notebook files.
+- `single_cell_rnaseq_breast_cancer.ipynb` - end-to-end analysis notebook.
+- `Single_Cell_RNAseq_Breast_Cancer_Report.pdf` - technical report.
+- `figures/` - selected figures exported from the notebook's saved outputs.
+- `.gitignore` - excludes raw data, large intermediate AnnData objects, and temporary notebook files.
 
 ## Reproducibility
 
